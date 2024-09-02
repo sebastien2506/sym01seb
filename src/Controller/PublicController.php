@@ -28,6 +28,18 @@ class PublicController extends AbstractController
             'page' => $id,
         ]);
 }
+
+
+#[Route('/form',
+name: 'form',
+methods:['GET'])]
+public function form(): Response
+{
+    return $this->render('public/form.html.twig', [
+]);
+}
+
+
     #[Route('/page/haha',
     name: 'error',
     methods:['GET'] 
